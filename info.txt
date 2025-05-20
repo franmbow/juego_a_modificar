@@ -1,0 +1,11 @@
+datos
+energía
+salud
+fuerza
+
+1ra elección
+
+Te encuentras con 3 caminos
+1. camino congelado y se escuchan rugidos en el fondo
+2. camino ancho y se puede ver una especie de mono enorme con un tronco en las manos
+3. camino silencioso rodeado de arboles oscuros y con poca luz solar en el, incluso cuesta ver por una niebla densa

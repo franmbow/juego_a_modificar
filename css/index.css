@@ -9,7 +9,7 @@ div{
 }
 
 h1{
-    color: #818181
+    color: #818181;
 }
 button{
     display: flexbox;
@@ -30,4 +30,32 @@ button{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+.salud{
+    color: #b41717;
+    font-weight: bold;
+    text-shadow: 0 0 10px #b41717, 0 0 20px #b41717;
+    animation: salud 1s infinite alternate;
+}
+
+.fuerza{
+    color: #17b4b4;
+    font-weight: bold;
+    text-shadow: 0 0 10px #17b4b4, 0 0 20px #17b4b4;
+    animation: fuerza 1s infinite alternate;
+}
+
+.energia{
+    color: #b4b417;
+    font-weight: bold;
+    text-shadow: 0 0 10px #b4b417, 0 0 20px #b4b417;
+    animation: energia 1s infinite alternate;
+}
+
+#brillo{
+    color: #4b7174;
+    font-weight: bold;
+    text-shadow: 0 0 10px #4b7174, 0 0 20px #4b7174;
+    animation: brillo 1s infinite alternate;
 }
