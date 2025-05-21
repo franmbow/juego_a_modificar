@@ -27,7 +27,7 @@ button{
 button:hover{
     transition: all 0.5s ease;
     color:aliceblue;
-    animation: brillo 1s infinite alternate;
+    animation: 1s infinite alternate;
 }
 
 p{
@@ -89,5 +89,5 @@ p{
     color: #4b7174;
     font-weight: bold;
     text-shadow: 0 0 10px #4b7174, 0 0 20px #4b7174;
-    animation: brillo 1s infinite alternate;
+    animation: 1s infinite alternate;
 }
