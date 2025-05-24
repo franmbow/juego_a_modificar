@@ -9,19 +9,22 @@
 //});
 
 const caminos = {
-    1: { texto: "eliges el camino congelado, se te complica caminar y sientes que te observan, que haras?", opciones: ["seguire caminando", "volvere por donde vine", "intento descubrir que me observa"] },
-    2: { texto: "puedes volver pero al llegar al inicio te das cuenta que un lobo te siguió, logras terminar con el pero pierdes salud y energía, ganas fuerza", opciones: ["Escalar", "Rodear", "Descansar"] },
-    3: { texto: "al quedarte detenido puedes ver a una manada de lobos a lo lejos", opciones: ["Izquierda", "Derecha", "Atrás"] }
-};
+    1: { texto: "eliges el camino congelado, se te complica caminar y sientes que te observan, que haras?", opciones: [{texto:"seguire caminando", siguiente : 4}, {texto: "volvere por donde vine", siguiente : 5}, {texto: "intento descubrir que me observa", siguiente : 6}] },
+    2: { texto: "puedes volver pero al llegar al inicio te das cuenta que un lobo te siguió, logras terminar con el pero pierdes salud y energía, ganas fuerza", opciones: [ {texto: "Escalar", siguiente : 4}, {texto: "rodear", siguiente : 5}, {texto: "Rodear", siguiente : 6},] },
+    3: { texto: "al quedarte detenido puedes ver a una manada de lobos a lo lejos", opciones: ["Izquierda", "Derecha", "Atrás"] },
+    4: { texto: "opcion 4", opciones: ["1", "2", "3"] },
+    5: { texto: "opcion 5", opciones: ["1", "2", "3"] },
+    6: { texto: "opcion 6", opciones: ["1", "2", "3"] }
+    };
 
 function elegirCamino(opcion) {
     const enunciado = document.getElementById("enunciado");
     const p = document.querySelectorAll("p");
 
     enunciado.textContent = caminos[opcion].texto;
-
-    caminos[opcion].opciones.forEach((texto, index) => {
-        p[index].textContent = texto;
-        p[index].setAttribute("onclick", `elegirCamino(${index + 1})`);
+    
+    caminos[opcion].opciones.forEach((opcionData, index) => {
+        p[index].textContent = opcionData.texto;
+        p[index].setAttribute("onclick", `elegirCamino(${opcionData.siguiente})`);
     });
 }
