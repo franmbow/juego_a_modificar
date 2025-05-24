@@ -7,42 +7,38 @@
         <link rel="stylesheet" href="../css/index.css" />
     </head>
     <body>
-        <script src="../juego.js" type="module"></script>
         <nav>
             <a href="index.html" class="volver_btn">
                 <button>Volver</button>
             </a>
         </nav>
         <div></div>
-        <h1>Primera eleccion</h1>
-        <h1>
+        <h1 id="titulo">Primera eleccion</h1>
+        <h1 id="enunciado">
             Te encuentras con <span id="brillo">3</span> caminos cual eligiras?
         </h1>
         <span class="caminos">
             <div>
-                <p>1. camino congelado y se escuchan rugidos en el fondo</p>
-                <a class="elegir_btn">
-                    <button id="eleccion">Elegir</button>
-                </a>
+                <p id="d1">
+                    1. camino congelado y se escuchan rugidos en el fondo
+                </p>
+                <button onclick="elegirCamino(1)" id="opcion">Elegir</button>
             </div>
             <div>
-                <p>
+                <p id="d2">
                     2. camino ancho y se puede ver una especie de mono enorme
                     con un tronco en las manos
                 </p>
-                <a href="" class="elegir_btn">
-                    <button>Elegir</button>
-                </a>
+                <button onclick="elegirCamino(2)" id="opcion">Elegir</button>
             </div>
             <div>
-                <p>
+                <p id="d3">
                     3. camino silencioso rodeado de arboles oscuros y con poca
                     luz solar en el, incluso cuesta ver por una niebla densa
                 </p>
-                <a href="" class="elegir_btn">
-                    <button>Elegir</button>
-                </a>
+                <button onclick="elegirCamino(3)" id="opcion">Elegir</button>
             </div>
         </span>
+        <script async src="../juego.js"></script>
     </body>
 </html>
